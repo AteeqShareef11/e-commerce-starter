@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gotham', sans-serif;
+  font-family: 'Gotham Black', sans-serif;
+  font-family: 'Gotham Light', sans-serif;
+  font-family: 'Gotham Thin', sans-serif;
+  font-family: 'Gotham XLight', sans-serif;
+  font-family: 'Gotham Book', sans-serif;
+  font-family: 'Gotham Ultra', sans-serif;
+}
+.flexRow {
+  display: flex;
+  gap: 1;
+}
+.new {
+  width: max-content;
+  background-color: #f8dfa7;
+  border-radius: 3px;
+  padding: 4px 10px;
+}
+
+.descriptionImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.slideNavigationContainer {
+  width: 90%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-color: transparent;
+}
+.activeImg {
+  filter: contrast(80%);
+  border: 3px solid #f8dfa7;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}

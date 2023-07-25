@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarLinkisFixed::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #fff;
+  transition: width 0.2s ease-out;
+}
+.navbarLinkisFixed:hover::before {
+  width: 100%;
+}
+.navbarLink::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #000;
+  transition: width 0.2s ease-out;
+}
+
+.navbarLink:hover::before {
+  width: 100%;
+}
+
+.text {
+  background: black;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  min-height: 0px;
+  max-height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  /* overflow: auto; */
+}
+
+.text.max {
+  transition: all 0.3s ease-in-out;
+  min-height: 200px;
+}
+.text.maxMbl {
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  min-height: 200px;
+  top: 0;
+  position: absolute;
+}
+
+@keyframes lineInserted {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20px; /* your line height here */
+  }
+}
+
+div[contenteditable] > div {
+  animation-duration: 0.3s;
+  animation-name: lineInserted;
+  transition: height 0.3s;
+}
+.slick-prev {
+  margin-left: -500px !important;
+  margin-top: -250px;
+  z-index: 20;
+}
+
+/* .slick-prev:before {
+  content: url(../src/src/assets/left-arrow.png);
+  display: inline-block;
+  background-color: white;
+  transform: scale(0.1);
+  margin-left: -500px !important;
+  margin-top: -250px;
+  z-index: 20;
+
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.slick-prev:hover::before {
+  background-color: #c4946e !important;
+} */
+
+.slick-next:before {
+  content: url(../src/src/assets/right-arrow.png);
+  display: inline-block;
+  background-color: white;
+  transform: scale(0.1);
+  margin-left: -200px;
+  margin-top: -250px;
+  overflow: hidden;
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.slick-next:hover::before {
+  background-color: #c4946e !important;
+}

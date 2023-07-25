@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbarLinkisFixed::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #fff;
+  transition: width 0.2s ease-out;
+}
+.navbarLinkisFixed:hover::before {
+  width: 100%;
+}
+.navbarLink::before {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 0.5px;
+  background-color: #000;
+  transition: width 0.2s ease-out;
+}
+
+.navbarLink:hover::before {
+  width: 100%;
+}
+
+.text {
+  background: black;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  min-height: 0px;
+  max-height: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  /* overflow: auto; */
+}
+
+.text.max {
+  transition: all 0.3s ease-in-out;
+  min-height: 200px;
+}
+.text.maxMbl {
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+  min-height: 200px;
+  top: 0;
+  position: absolute;
+}
+
+@keyframes lineInserted {
+  from {
+    height: 0;
+  }
+  to {
+    height: 20px; /* your line height here */
+  }
+}
+
+div[contenteditable] > div {
+  animation-duration: 0.3s;
+  animation-name: lineInserted;
+  transition: height 0.3s;
+}
+
+.innerBoxShadow {
+  box-shadow: 76px 41px 153px -89px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 76px 41px 153px -89px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 76px 41px 153px -89px rgba(0, 0, 0, 1);
+}
+
+.isNested:hover {
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #09529b !important;
+}
+
+.slick-list {
+  margin: 0 -5px;
+}
+.slick-slide > div {
+  padding: 0 5px;
+}
+.navbarLink:hover {
+  --c: #c4946e;
+
+  color: #0000;
+  background: linear-gradient(90deg, #fff 50%, var(--c) 0) calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+.navbarLink:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px #c4946e;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.navbarLink:hover:after {
+  transform: scaleX(1);
+}
+
+.hidenClass {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  transition: all 2s;
+}
+.showClass {
+  opacity: 0;
+  filter: blur(3px);
+
+  transform: translateY(100%);
+}
+.animateButton {
+  animation-duration: 1s;
+  animation-name: animate-button;
+}
+@keyframes animate-button {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -15px;
+  width: auto;
+  margin-bottom: -15px;
+}
+
+.my-masonry-grid_column {
+  padding-left: 15px;
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 15px;
+}
+
+.containers {
+  display: 'flex' !important;
+  flex-direction: 'row' !important;
+  justify-content: 'space-between' !important;
+  flex-wrap: 'wrap';
+}
+.MuiMobileStepper-dots {
+  display: none !important;
+}
+.productInfoImageBox {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.productInfoImage {
+  width: 100%;
+  height: 100%;
+  object-fit: 100%;
+  border-radius: 14px;
+}
+.productInfoOrderNumber {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  background-color: black;
+  padding: 4% 8%;
+  z-index: 0.1999;
+  margin-left: 90% !important;
+  background-color: black;
+  border-radius: 50px !important;
+  margin-top: -200% !important;
+  color: white;
+}
+.flexCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.productInfoOrderTitle {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.3rem !important;
+  line-height: 1.063rem;
+}
+.productInfoOrderBtn {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 8.5px !important;
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  padding: 8% 20% !important;
+}
+.productInfoOrderBtn:hover {
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.productInfoOrderPrice {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.063rem;
+}
+.productInfoOrderPrice1 {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.7rem !important;
+  line-height: 1.063rem;
+}
+.productInfoOrderPrice2 {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 1.3rem !important;
+  line-height: 1.063rem;
+  color: gray;
+}
+.flexSpaceBtw {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.productInfoOrderBrod {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.063rem;
+  color: gray;
+  text-decoration: none;
+}
+.productInfoOrderTitle1 {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1rem !important;
+  line-height: 1.063rem;
+}
+.links {
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+.MuiFormControlLabel-label {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  font-size: 1.2rem !important;
+  line-height: 1.063rem;
+}
+.productInfoOrderBottom {
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 300 !important;
+  font-size: 0.9rem !important;
+  line-height: 0.5rem;
+  color: rgb(163, 162, 162);
+  text-decoration: none;
+}
+.Mui-disabled {
+  background-color: white !important;
+  color: black !important;
+}
+.contactInfoContainer {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 3%;
+}
+.flexColSpaceBtw {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+}
+.profilesidebar {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 4% !important;
+  color: #000 !important;
+  font-size: 1.5rem !important;
+  position: relative;
+  font-family: 'Gotham', sans-serif !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: 17px !important;
+}
+.profilesidebar:hover {
+  color: pink !important;
+  background-color: transparent !important;
+}
+.profilesidebar:focus {
+  color: pink !important;
+  background-color: transparent !important;
+}
