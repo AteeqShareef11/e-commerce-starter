@@ -55,6 +55,6 @@ Here are some demo pages to showcase the different features of the e-commerce st
 - [Category Products Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/pages/Wall-Hangings)
 - [Product Description Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/pages/categorey/product)
 - [Cart Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/cart)
-- [Dashboard](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/dashboard/product)
+- [Dashboard](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/dashboard/products)
 
 Happy coding! 🚀

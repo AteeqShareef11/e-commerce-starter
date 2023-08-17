@@ -38,7 +38,6 @@ export default function Router() {
         { path: '/', element: <Home /> },
         { path: 'cart', element: <Cart /> },
         { path: 'cart/information', element: <InformationShiping /> },
-
         { path: 'pages/about', element: <About /> },
         { path: 'pages/contact', element: <Contact /> },
         { path: 'pages/terms', element: <Terms /> },
