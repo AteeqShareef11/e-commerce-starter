@@ -51,10 +51,10 @@ We welcome contributions to improve and enhance this e-commerce starter project.
 
 Here are some demo pages to showcase the different features of the e-commerce starter:
 
-- [Product Landing Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/)
-- [Category Products Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/pages/Wall-Hangings)
-- [Product Description Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/pages/categorey/product)
-- [Cart Page](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/cart)
-- [Dashboard](https://e-commerce-starter-lhuy9cke9-ateeqshareef11.vercel.app/dashboard/products)
+- [Product Landing Page](https://e-commerce-starter-git-master-ateeqshareef11.vercel.app/)
+- [Category Products Page](https://e-commerce-starter-git-master-ateeqshareef11.vercel.app/pages/Wall-Hangings)
+- [Product Description Page](https://e-commerce-starter-git-master-ateeqshareef11.vercel.app/pages/categorey/product)
+- [Cart Page](https://e-commerce-starter-git-master-ateeqshareef11.vercel.app/cart)
+- [Dashboard](https://e-commerce-starter-git-master-ateeqshareef11.vercel.app/dashboard/app)
 
 Happy coding! 🚀
