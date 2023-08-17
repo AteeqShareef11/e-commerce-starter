@@ -158,19 +158,6 @@ export default function Products() {
       </Helmet>
 
       <Container>
-        <Stack direction="row" alignItems="center" justifyContent="space-between" mb={5}>
-          <Typography variant="h4" gutterBottom>
-            Products
-          </Typography>
-          <Button
-            variant="contained"
-            onClick={() => navigate('new-product')}
-            startIcon={<Iconify icon="eva:plus-fill" />}
-          >
-            New Products
-          </Button>
-        </Stack>
-
         <Card>
           <UserListToolbar numSelected={selected.length} filterName={filterName} onFilterName={handleFilterByName} />
 
