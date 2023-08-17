@@ -3,7 +3,6 @@ import { Navigate, useRoutes } from 'react-router-dom';
 // layouts
 import DashboardLayout from './layouts/dashboard';
 //
-import UserPage from './pages/Products';
 
 import DashboardAppPage from './pages/DashboardAppPage';
 import Home from './src/Pages/Home';
@@ -68,7 +67,6 @@ export default function Router() {
         { path: 'products', element: <Products /> },
         { path: 'products/new-product', element: <NewProducts /> },
         { path: 'products/edit-product', element: <EditProduct /> },
-        { path: 'orders', element: <UserPage /> },
       ],
     },
 

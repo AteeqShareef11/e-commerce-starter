@@ -37,8 +37,6 @@ export default function AccountPopover() {
     localStorage.removeItem('whatssapp_bot_token');
     localStorage.removeItem('whatssapp_bot_email');
     navigate('/login');
-    
-
   };
   const handleClose = () => {
     setOpen(null);
@@ -87,10 +85,7 @@ export default function AccountPopover() {
       >
         <Box sx={{ my: 1.5, px: 2.5 }}>
           <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
-            {localStorage.getItem('whatssapp_bot_email')}
-          </Typography>
-          <Typography component={Link} to="profile" variant="subtitle2" noWrap>
-            Profile
+            {localStorage.getItem('token')}
           </Typography>
         </Box>
 
